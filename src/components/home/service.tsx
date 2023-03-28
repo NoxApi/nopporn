@@ -9,26 +9,26 @@ export const ServiceH =()=>{
         <div className="w-[1920px] h-[875px] relative opensans flex flex-col items-center text-main">
             <div className="w-[1440px] h-[619px] bg-white flex flex-col items-center justify-between py-[90px]">
                 <p className="text-[64px] ">{"บริการของเรา"}</p>
-                <div className="w-full h-auto flex justify-between">
-                    <div className="flex flex-col items-center">
+                <div className="w-full h-auto flex justify-evenly">
+                    <div className="flex flex-col items-center  w-[300px] ">
                         <Image src={s1} alt="" className="w-[200px]"/>
                         <p className="text-3xl font-semibold">{"ดูแลเอาใจใส่"}</p>
                         <p className="text-2xl font-light">{"ดูแลเอาใจใส่ดุจญาติมิตร"}</p>
-                        <p className="text-2xl">{"ประสบการณ์การดูแลผู้สูงอายุ มากกว่า 10 ปี"}</p>
+                        <p className="text-2xl w-[420px]">{"ประสบการณ์การดูแลผู้สูงอายุ มากกว่า 10 ปี"}</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center w-[300px]" >
                         <Image src={s2} alt="" className="w-[200px]"/>
                         <p className="text-3xl font-semibold">{"สะอาด"}</p>
                         <p className="text-2xl font-light">{"ที่พักสะอาด"}</p>
                         <p className="text-2xl">{"ซัก รีดเครืองนุ่มห่ม"}</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center w-[300px]">
                         <Image src={s3} alt="" className="w-[200px]"/>
                         <p className="text-3xl font-semibold">{"รถพยาบาล"}</p>
                         <p className="text-2xl font-light">{"บริการพาไปพบแพทย์"}</p>
                         <p className="text-2xl">{"นวดบำบัด และ ทำกายภาพ"}</p>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center w-[300px]">
                         <Image src={s4} alt="" className="w-[200px]"/>
                         <p className="text-3xl font-semibold">{"บริการ 24 ชม."}</p>
                         <p className="text-2xl font-light">{"มีเจ้าหน้าที่ตลอด 24 ชั่วโมง"}</p>
