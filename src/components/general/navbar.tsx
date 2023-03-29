@@ -9,7 +9,7 @@ export const Navbar =()=>{
 
     return(
         <div className="w-[1920px] h-[80x] relative opensans flex justify-center items-center text-main z-20 navbar">
-            <div className="w-[1440px] h-full  flex items-center justify-between">
+            <div className="w-[1440px] h-full  flex items-center justify-between px-[20px]">
                 <Image src={logo} alt="" className="w-[80px]"/>
                 <div>
                     <Link href={"/"}>
