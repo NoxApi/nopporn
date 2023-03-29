@@ -9,11 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "main":"#00BBEA"
+        "main":"#00BBEA",
+        "secondary":"#0C294B",
       },
       backgroundImage: {
         'div1': "url('/div1.png')",
         'div2': "url('/div2.png')",
+        'cover1': "url('/c1.jpg')",
       }
     },
     

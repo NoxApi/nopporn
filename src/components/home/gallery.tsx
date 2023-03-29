@@ -7,10 +7,10 @@ import Image from "next/image"
 export const GalleryH =()=>{
 
     return(
-        <div className="w-[1920px] h-[1763px] relative opensans flex flex-col items-center text-main">
-            <div className="w-[1440px] h-[1507px] bg-white flex flex-col items-center justify-between py-[40px]">
+        <div className="w-[1920px] h-[1792px] relative opensans flex flex-col items-center text-main">
+            <div className="w-[1440px] h-[1536px] bg-white flex flex-col items-center justify-between py-[80px]">
                 <p className="text-[64px] ">{"คลังภาพ"}</p>
-                <div className="w-full flex mt-6">
+                <div className="w-full flex mt-12">
                     <div className="w-[680px] flex flex-col justify-center items-end px-[50px]">
                         <p className="text-5xl">{"บรรยากาศ"}</p>
                         <p className="text-black text-3xl w-[600px] text-right mt-6">{"บ้านพักตั้งอยู่ใจกลางเมือง เดินทางสะดวก บรรยากาศปลอดโปร่งร่มรื่น พร้อมเจ้าหน้าที่ดูแลตลอด 24 ชั่วโมง มีโรงพยาบาลใกล้เคียงถึง 4 แห่ง ในกรณีฉุกเฉินสามารถส่งตัวเข้าโรงพยาบาลได้ทันท่วงที ถูกสุขอนามัย เครื่องปรับอากาศ บริการ wifi พร้อมกล้องวงจรปิดรักษาความปลอดภัย ที่จอดรถ"}</p>
@@ -18,12 +18,12 @@ export const GalleryH =()=>{
                             <p className="mx-[40px] ">{"ดูเพิ่มเติม"}</p>
                         </button>   
                     </div>
-                    <div className="w-[680px]">
+                    <div className="w-[640px]">
                         <Image src={pic1} alt=""/>
                     </div>
                 </div>
                 <div className="w-full flex mt-12">
-                <div className="w-[680px]">
+                <div className="w-[640px]">
                         <Image src={pic1} alt=""/>
                     </div>
                     <div className="w-[680px] flex flex-col justify-center items-start px-[50px]">

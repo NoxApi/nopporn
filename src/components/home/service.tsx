@@ -7,7 +7,7 @@ export const ServiceH =()=>{
 
     return(
         <div className="w-[1920px] h-[875px] relative opensans flex flex-col items-center text-main">
-            <div className="w-[1440px] h-[619px] bg-white flex flex-col items-center justify-between py-[90px]">
+            <div className="w-[1440px] h-[619px] bg-white flex flex-col items-center justify-between py-[80px]">
                 <p className="text-[64px] ">{"บริการของเรา"}</p>
                 <div className="w-full h-auto flex justify-evenly">
                     <div className="flex flex-col items-center  w-[300px] ">
