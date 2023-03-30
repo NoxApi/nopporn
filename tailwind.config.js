@@ -13,8 +13,8 @@ module.exports = {
         "secondary":"#0C294B",
       },
       backgroundImage: {
-        'div1': "url('/div1.png')",
-        'div2': "url('/div2.png')",
+        'div1': "url('/div1.jpg')",
+        'div2': "url('/div2.jpg')",
         'cover1': "url('/c1.jpg')",
       },
       screens: {

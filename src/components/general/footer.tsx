@@ -10,60 +10,75 @@ import Link from "next/link"
 export const Footer =()=>{
 
     return(
-        <div className="w-[1920px] h-[444px] relative opensans flex flex-col items-center text-main border-t-4 border-main">
-            <div className="w-[1440px] h-[385px] bg-white flex items-center justify-between px-[80px]">
-                <Image src={logo} alt="" className="-mt-12"/>
-                <div className="flex flex-col">
-                    <Link href={"/"}>
-                        <button>
-                            <p className="text-xl link">{"หน้าแรก"}</p>
-                        </button>
-                    </Link>
-                    <Link href={"/service"}>
-                        <button className="mt-8">
-                            <p className="text-xl link">{"บริการ"}</p>
-                        </button>
-                    </Link>
-                    <Link href={"/gallery"}>
-                        <button className="mt-8">
-                            <p className="text-xl link">{"คลังภาพ"}</p>
-                        </button>
-                    </Link>
-                    <Link href={"/aboutus"}>
-                        <button className="mt-8">
-                            <p className="text-xl link">{"เกี่ยวกับเรา"}</p>
-                        </button>
-                    </Link>
+        <div className="w-[1920px] h-[444px] relative opensans flex flex-col items-center text-main border-t-4 border-main xlm:h-auto">
+            <div className="w-[1440px] h-[385px] bg-white flex items-center justify-between px-[90px] xlm:h-auto xlm:flex-col">
+                <Image src={logo} alt="" className="-mt-12 smm:w-[30vw] smm:mt-[-5vw] smm:translate-x-[-19vw]"/>
+                <div className="flex justify-between w-[900px] lgm:flex-col lgm:items-center">
+                    <div className="flex w-[500px] justify-between lgm:w-[400px] smm:w-[100vw] smm:px-[15vw] ">
+                        <div className="flex flex-col justify-between items-start smm:py-[3vw]">
+                            
+                                <button className="">
+                                    <Link href={"/"}>
+                                        <p className="text-xl link smm:text-[3.3vw] smm:leading-[3vw]">{"หน้าแรก"}</p>
+                                    </Link>
+                                </button>
+                           
+                           
+                                <button className="mt-8 smm:mt-[4vw]">
+                                    <Link href={"/service"}>
+                                        <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"บริการ"}</p>
+                                    </Link>
+                                </button>
+                            
+                            
+                                <button className="mt-8 smm:mt-[4vw]">
+                                    <Link href={"/gallery"}>
+                                        <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"คลังภาพ"}</p>
+                                    </Link>
+                                </button>
+                            
+                           
+                                <button className="mt-8 smm:mt-[4vw]">
+                                    <Link href={"/aboutus"}>
+                                        <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"เกี่ยวกับเรา"}</p>
+                                    </Link>
+                                </button>
+                          
 
-                </div>
-                <div className="flex flex-col">  
-                    <div className="flex">    
-                        <Image src={s4} alt="" className="w-[30px] "/>   
-                        <p className="text-xl ml-2">{"ติดต่อเรา"}</p>
-                    </div>  
-                    <div className="flex mt-4">    
-                        <Image src={s1} alt="" className="w-[40px]"/>   
-                        <p className="text-xl ml-5">{"081-581-9850"}</p>
-                    </div>  
-                    <div className="flex mt-4">    
-                        <Image src={s2} alt="" className="w-[40px]"/>   
-                        <p className="text-xl ml-5">{"รับดูแลผู้สูงอายุ นพพรเนิร์สซิ่งโฮม"}</p>
-                    </div>  
-                    <div className="flex mt-4">    
-                        <Image src={s3} alt="" className="w-[40px]"/>   
-                        <p className="text-xl ml-5">{"wi0411"}</p>
-                    </div>  
-                </div>
-                <div className="flex flex-col ">  
-                    <div className="flex">    
-                        <Image src={loc} alt="" className="w-[30px] "/>   
-                        <p className="text-xl ml-2">{"แผนที่"}</p>
-                    </div>  
-                    <Image src={gmap} alt="" className="mt-4"/>
+                        </div>
+                        <div className="flex flex-col">  
+                            <div className="flex">    
+                                <Image src={s4} alt="" className="w-[30px] smm:w-[5vw]"/>   
+                                <p className="text-xl smm:text-[3.3vw] ml-2 smm:ml-[2vw] smm:leading-[3vw]">{"ติดต่อเรา"}</p>
+                            </div>  
+                            <div className="flex mt-4 smm:mt-[3.5vw]">    
+                                <Image src={s1} alt="" className="w-[40px] smm:w-[8vw]"/>   
+                                <p className="text-xl smm:text-[3.3vw] ml-5 smm:ml-[3vw] smm:leading-[3vw]">{"081-581-9850"}</p>
+                            </div>  
+                            <div className="flex mt-4 smm:mt-[3.5vw]">    
+                                <Image src={s2} alt="" className="w-[40px] smm:w-[8vw]"/>   
+                                <p className="text-xl smm:text-[3.3vw] ml-5 smm:ml-[3vw] smm:leading-[3vw]">{"wi0411"}</p>
+                            </div>  
+                            <div className="flex mt-4  smm:mt-[3.5vw] justify-center items-center">    
+                                <Image src={s3} alt="" className="w-[40px] h-[40px] smm:w-[8vw] smm:h-[8vw]"/>
+                                <div>  
+                                    <p className="text-xl ml-5 smm:text-[3.3vw] smm:ml-[3vw] smm:leading-[5vw]">{"รับดูแลผู้สูงอายุ"}</p> 
+                                    <p className="text-xl ml-5 smm:text-[3.3vw] smm:ml-[3vw] smm:leading-[5vw]">{"นพพรเนิร์สซิ่งโฮม"}</p>
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                    <div className="flex flex-col lgm:mt-8 smm:mt-[4vw] ">  
+                        <div className="flex">    
+                            <Image src={loc} alt="" className="w-[30px] smm:w-[4vw] smm:h-[4vw] "/>   
+                            <p className="text-xl ml-2 smm:text-[4vw] smm:leading-[4vw]">{"แผนที่"}</p>
+                        </div>  
+                        <Image src={gmap} alt="" className="mt-4 w-[300px] lgm:w-[400px] smm:w-[70vw] smm:mt-[2vw]"/>
+                    </div>
                 </div>
             </div>
-            <div className="w-[1920px] h-[59px] bg-main flex flex-col items-center justify-center ">
-                <p className="text-white text-[20px] uppercase">{"Copyright © 2015 by TaladPhlu Nursing Home. All rights reserved."}</p>
+            <div className="w-[1920px] h-[59px] bg-main flex flex-col items-center justify-center mdm:h-[10vw] xlm:mt-12 ">
+                <p className="text-white text-[20px] uppercase mdm:text-[2.5vw]">{"Copyright © 2015 by TaladPhlu Nursing Home. All rights reserved."}</p>
            </div>
         </div>
     )

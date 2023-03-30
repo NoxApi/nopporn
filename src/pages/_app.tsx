@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
       href="https://fonts.googleapis.com/css?family=Bai Jamjuree"
       rel="stylesheet"
       />
+      <link href='https://fonts.googleapis.com/css?family=Noto Sans Thai' rel='stylesheet'/>
       <Component {...pageProps} />
     </div>
   )
