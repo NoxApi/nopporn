@@ -78,7 +78,7 @@ export const Footer =()=>{
                 </div>
             </div>
             <div className="w-[1920px] h-[59px] bg-main flex flex-col items-center justify-center mdm:h-[10vw] xlm:mt-12 ">
-                <p className="text-white text-[20px] uppercase mdm:text-[2.5vw]">{"Copyright © 2015 by TaladPhlu Nursing Home. All rights reserved."}</p>
+                <p className="text-white text-[20px] xlm:text-sm uppercase mdm:text-[1.8vw]">{"COPYRIGHT © 2023 BY JAK SOOK PLOOK RUK CO., LTD. ALL RIGHTS RESERVED. POWERED BY ZAPFILE CO., LTD."}</p>
            </div>
         </div>
     )
