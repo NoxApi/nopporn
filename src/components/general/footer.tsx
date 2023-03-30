@@ -18,28 +18,28 @@ export const Footer =()=>{
                         <div className="flex flex-col justify-between items-start smm:py-[3vw]">
                             
                                 <button className="">
-                                    <Link href={"/"}>
+                                    <Link href={"#home"}>
                                         <p className="text-xl link smm:text-[3.3vw] smm:leading-[3vw]">{"หน้าแรก"}</p>
                                     </Link>
                                 </button>
                            
                            
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"/service"}>
+                                    <Link href={"#service"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"บริการ"}</p>
                                     </Link>
                                 </button>
                             
                             
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"/gallery"}>
+                                    <Link href={"#gallery"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"คลังภาพ"}</p>
                                     </Link>
                                 </button>
                             
                            
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"/aboutus"}>
+                                    <Link href={"#aboutus"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"เกี่ยวกับเรา"}</p>
                                     </Link>
                                 </button>

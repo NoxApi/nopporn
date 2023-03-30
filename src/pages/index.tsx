@@ -20,10 +20,15 @@ export default function Home() {
       </Head>
       <div className=" flex flex-col items-center opensans h-auto w-[1920px] justify-center overflow-hidden">
         <Navbar/>
+        <section id='home'/>
         <Cover/>
+        <section id='service'/>
         <ServiceH/>
+        <section id='gallery'/>
         <GalleryH/>
+        <section id='aboutus'/>
         <ArticleH/>
+        <section id='contact'/>
         <Footer/>
       </div>
     </>
