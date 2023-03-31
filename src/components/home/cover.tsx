@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import s1 from "../../../public/s1.png"
 import s2 from "../../../public/s2.png"
 import classNames from 'classnames';
@@ -7,27 +7,26 @@ import s3 from "../../../public/s3.png"
 export const Cover =()=>{
     const [cover,setcover] = useState(0)
     const [isready,setisready] = useState(false)
-    let combinedClasses
     const auto = () =>{
     if(cover != 10){
         setcover(cover+1)
     } 
-    else
+    else{
         setcover(0)
+        }
     }
-    setInterval(auto,5000);
-    useState(()=>{
-        console.log("hey")
-        const dynamicClass = "bg-cover"+cover
-        combinedClasses = classNames('');
+    useEffect(() => {
+        console.log("useEffect run")
+        const id = setInterval(auto, 3000);
         setisready(true)
-    }),[]
+        return () => clearInterval(id);
+    }, [cover])
 
     return(
         <div className={`w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw]`}>
             {isready?(<>
             <div className="hidden bg-cover1 bg-cover2 bg-cover3 bg-cover4 bg-cover5 bg-cover6 bg-cover7 bg-cover8 bg-cover9 bg-cover10 bg-cover0"></div>
-            <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] mdm:bg-cover mdm:bg-center xlm:bgcover xlm:bg-cover"+cover}>
+            <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] xlm:bg-cover xlm:bg-center  xl:bg-none bg-cover"+cover}>
                 <div className="w-[800px] ml-[240px] h-full flex justify-center items-center pl-[50px] xlm:pl-0 xlm:w-full xlm:ml-0 xlm:bg-[#00BBEA] xlm:bg-opacity-30">
                     <div className="w-[550px] h-auto xlm:flex xlm:flex-col xlm:items-center">
                         <p className="text-2xl text-left outlineadd xlm:text-6xl mdm:text-[7vw]">{"อารมณ์ดี สุขภาพดี"}</p>
@@ -37,7 +36,20 @@ export const Cover =()=>{
                         </div>
                         <p className="text-4xl text-left mt-8 mdm:mt-[4vw] outlineadd xlm:text-6xl mdm:text-[8vw]">{"ให้เราช่วยดูแล "}</p>
                         <p className="text-4xl text-left mt-8 mdm:mt-[4vw] outlineadd xlm:text-6xl mdm:text-[8vw]">{"คนที่ท่านรัก"}</p>
-                        <button className="mainbutton xl:hidden mt-52 mdm:mt-[90vw] smm:w-[30vw] smm:text-[3vw] smm:leading-[3vw] smm:h-[10vw]">{"สอบถามเพิ่มเติม"}</button>
+                        <button className="mainbutton xl:hidden mt-52 mdm:mt-[80vw] smm:w-[40vw] smm:text-[4vw] smm:leading-[3vw] smm:h-[14vw] ">{"สอบถามเพิ่มเติม"}</button>
+                        <div className="flex xl:hidden mt-[3vw]">
+                            <div className={`w-[2vw] h-[2vw] rounded-full  ${(cover==0)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==1)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==2)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==3)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==4)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==5)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==6)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==7)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==8)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==9)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==10)?("bg-main"):("bg-secondary")} `}></div>
+                        </div>
                     </div>
                 </div>
                     
