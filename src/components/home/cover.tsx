@@ -4,9 +4,9 @@ import s1 from "../../../public/s1.png"
 import s2 from "../../../public/s2.png"
 import classNames from 'classnames';
 import s3 from "../../../public/s3.png"
+import Link from "next/link";
 export const Cover =()=>{
     const [cover,setcover] = useState(0)
-    const [isready,setisready] = useState(false)
     const auto = () =>{
     if(cover != 10){
         setcover(cover+1)
@@ -18,15 +18,13 @@ export const Cover =()=>{
     useEffect(() => {
         console.log("useEffect run")
         const id = setInterval(auto, 3000);
-        setisready(true)
         return () => clearInterval(id);
     }, [cover])
 
     return(
-        <div className={`w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw]`}>
-            {isready?(<>
+        <div className={`w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw] `}>
             <div className="hidden bg-cover1 bg-cover2 bg-cover3 bg-cover4 bg-cover5 bg-cover6 bg-cover7 bg-cover8 bg-cover9 bg-cover10 bg-cover0"></div>
-            <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] xlm:bg-cover xlm:bg-center  xl:bg-none bg-cover"+cover}>
+            <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] xlm:bg-cover xlm:bg-center  xl:bg-none  bg-cover"+cover}>
                 <div className="w-[800px] ml-[240px] h-full flex justify-center items-center pl-[50px] xlm:pl-0 xlm:w-full xlm:ml-0 xlm:bg-[#00BBEA] xlm:bg-opacity-30">
                     <div className="w-[550px] h-auto xlm:flex xlm:flex-col xlm:items-center">
                         <p className="text-2xl text-left outlineadd xlm:text-6xl mdm:text-[7vw]">{"อารมณ์ดี สุขภาพดี"}</p>
@@ -38,17 +36,17 @@ export const Cover =()=>{
                         <p className="text-4xl text-left mt-8 mdm:mt-[4vw] outlineadd xlm:text-6xl mdm:text-[8vw]">{"คนที่ท่านรัก"}</p>
                         <button className="mainbutton xl:hidden mt-52 mdm:mt-[80vw] smm:w-[40vw] smm:text-[4vw] smm:leading-[3vw] smm:h-[14vw] ">{"สอบถามเพิ่มเติม"}</button>
                         <div className="flex xl:hidden mt-[3vw]">
-                            <div className={`w-[2vw] h-[2vw] rounded-full  ${(cover==0)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==1)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==2)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==3)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==4)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==5)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==6)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==7)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==8)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==9)?("bg-main"):("bg-secondary")} `}></div>
-                            <div className={`w-[2vw] h-[2vw] rounded-full ml-[1vw] ${(cover==10)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200  ${(cover==0)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==1)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==2)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==3)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==4)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==5)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==6)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==7)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==8)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==9)?("bg-main"):("bg-secondary")} `}></div>
+                            <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==10)?("bg-main"):("bg-secondary")} `}></div>
                         </div>
                     </div>
                 </div>
@@ -57,57 +55,57 @@ export const Cover =()=>{
                     <div className="w-[1020px] h-[1020px] bg-[#00BBEA] bg-opacity-20 absolute rounded-full top-[-200px] left-[-150px] flex justify-center items-center">
                         <div className="w-full absolute ">
                             <div className="w-[510px]   z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==0)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==0)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-5deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==1)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==1)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-10deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==2)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==2)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-15deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==3)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==3)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-20deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==4)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==4)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-25deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==5)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==5)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-30deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==6)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==6)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-35deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==7)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==7)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-40deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==8)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==8)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-45deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==9)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==9)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className="w-full absolute  rotate-[-50deg]">
                             <div className="w-[510px] z-30 h-[30px] left-0">
-                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==10)?("bg-main"):("bg-secondary")}`}></div>
+                                <div className={`  w-[30px] h-[30px] rounded-full ml-4 transition-all duration-200 ${(cover==10)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
                         <div className={"w-[896px] h-[896px] rounded-full bg-cover bg-center bg-cover"+cover}></div>
@@ -139,8 +137,10 @@ export const Cover =()=>{
                     </div>
                 </div>
             </div>
-            <button className="mainbutton absolute bottom-[200px] left-[50%] translate-x-[-50%] xlm:hidden">{"สอบถามเพิ่มเติม"}</button>
-            </>):(null)}
+            <button className="mainbutton absolute bottom-[200px] left-[50%] translate-x-[-50%] xlm:hidden">
+                <Link href={"/contact"}>{"สอบถามเพิ่มเติม"}
+                </Link>
+            </button>
         </div>
     )
 }

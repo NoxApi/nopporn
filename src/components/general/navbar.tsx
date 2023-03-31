@@ -17,7 +17,7 @@ export const Navbar =()=>{
             <div className="w-[1440px] h-full  flex items-center justify-between px-[20px] 2xlm:w-[100vw]">
                 <Image src={logo} alt="" className="w-[80px] mdm:w-[15vw]"/>
                 <div className="lgm:hidden">
-                    <Link href={"#home"}>
+                    <Link href={"/"}>
                         <button className="link">
                             <p className="text-xl link ">{"หน้าแรก"}</p>
                         </button>
@@ -27,7 +27,7 @@ export const Navbar =()=>{
                             <p className="text-xl link">{"บริการ"}</p>
                         </button>
                     </Link>
-                    <Link href={"#gallery"}>
+                    <Link href={"/gallery"}>
                         <button className="ml-8">
                             <p className="text-xl link">{"คลังภาพ"}</p>
                         </button>
@@ -37,7 +37,7 @@ export const Navbar =()=>{
                             <p className="text-xl link">{"เกี่ยวกับเรา"}</p>
                         </button>
                     </Link>
-                    <Link href={"#contact"}>
+                    <Link href={"/contact"}>
                         <button className="ml-8">
                             <p className="text-xl link">{"ติดต่อเรา"}</p>
                         </button>
@@ -93,7 +93,7 @@ function HeaderMobile() {
                 <div className="ml-auto w-[50vw] h-[100vh] relative  overflow-hidden text-left align-middle transition-all transform shadow-xl bg-white">
                   <div className=" mx-4 text-white text-2xl flex flex-col items-start w-[100%] px-[2vw] mt-[10vw]">
                   <button onClick={closeModal} className="w-[100%] flex">
-                        <Link href={"#home"}>      
+                        <Link href={"/"}>      
                             <p className="my-[5vw] text-xl text-main">{"หน้าแรก"}</p> 
                         </Link>
                   </button>
@@ -103,7 +103,7 @@ function HeaderMobile() {
                         </Link>
                   </button>
                   <button onClick={closeModal} className="w-[100%] flex">
-                        <Link href={"#gallery"}>      
+                        <Link href={"/gallery"}>      
                             <p className="my-[5vw] text-xl text-main">{"คลังภาพ"}</p> 
                         </Link>
                   </button>

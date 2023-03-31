@@ -18,8 +18,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=" flex flex-col items-center opensans h-auto w-[1920px] justify-center overflow-hidden">
-        <Navbar/>
         <section id='home'/>
         <Cover/>
         <section id='service'/>
@@ -29,8 +27,6 @@ export default function Home() {
         <section id='aboutus'/>
         <ArticleH/>
         <section id='contact'/>
-        <Footer/>
-      </div>
     </>
   )
 }

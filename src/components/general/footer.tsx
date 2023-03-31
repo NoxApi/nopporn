@@ -18,7 +18,7 @@ export const Footer =()=>{
                         <div className="flex flex-col justify-between items-start smm:py-[3vw]">
                             
                                 <button className="">
-                                    <Link href={"#home"}>
+                                    <Link href={"/"}>
                                         <p className="text-xl link smm:text-[3.3vw] smm:leading-[3vw]">{"หน้าแรก"}</p>
                                     </Link>
                                 </button>
@@ -32,7 +32,7 @@ export const Footer =()=>{
                             
                             
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"#gallery"}>
+                                    <Link href={"/gallery"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"คลังภาพ"}</p>
                                     </Link>
                                 </button>
@@ -68,12 +68,14 @@ export const Footer =()=>{
                             </div>  
                         </div>
                     </div>
-                    <div className="flex flex-col lgm:mt-8 smm:mt-[4vw] ">  
-                        <div className="flex">    
-                            <Image src={loc} alt="" className="w-[30px] smm:w-[4vw] smm:h-[4vw] "/>   
-                            <p className="text-xl ml-2 smm:text-[4vw] smm:leading-[4vw]">{"แผนที่"}</p>
-                        </div>  
-                        <Image src={gmap} alt="" className="mt-4 w-[300px] lgm:w-[400px] smm:w-[70vw] smm:mt-[2vw]"/>
+                    <div className="flex flex-col lgm:mt-8 smm:mt-[4vw] ">
+                        <Link href={"https://www.google.com/maps?ll=13.868618,100.466945&z=17&t=m&hl=th&gl=TH&mapclient=embed&cid=12277692026334780892"} target="_blank" rel="noopener noreferrer">
+                            <div className="flex">    
+                                <Image src={loc} alt="" className="w-[30px] smm:w-[4vw] smm:h-[4vw] "/>   
+                                <p className="text-xl ml-2 smm:text-[4vw] smm:leading-[4vw]">{"แผนที่"}</p>
+                            </div>  
+                            <Image src={gmap} alt="" className="mt-4 w-[300px] lgm:w-[400px] smm:w-[70vw] smm:mt-[2vw]"/>
+                        </Link>
                     </div>
                 </div>
             </div>

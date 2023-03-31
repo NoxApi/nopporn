@@ -3,6 +3,7 @@ import s2 from "../../../public/service2.png"
 import s3 from "../../../public/service3.png"
 import s4 from "../../../public/service4.png"
 import Image from "next/image"
+import Link from "next/link"
 export const ServiceH =()=>{
 
     return(
@@ -48,7 +49,9 @@ export const ServiceH =()=>{
                                 <p className="text-white text-[36px] addshadow mt-6 lgm:text-2xl smm:text-[3.7vw] smm:leading-[4vw] smm:mt-[4vw]">{"บริการดูแลผู้สูงอายุ ดูแลดุจญาติมิตร ด้วยบุคลากรเฉพาะทาง"}</p>
                         </div>
                         <button className="mainbutton ml-[220px] 2xlm:ml-0 2xlm:mb-[70px] lgm:mb-[40px] smm:mb-[4vw] smm:w-[30vw] smm:text-[3vw] smm:leading-[3vw] smm:h-[10vw]">
-                            <p className="mx-[40px] smm:mx-0">{"ติดต่อเรา"}</p>
+                            <Link href={"/contact"}>
+                                <p className="mx-[40px] smm:mx-0">{"ติดต่อเรา"}</p>
+                            </Link>
                         </button>   
                     </div>
                 </div>

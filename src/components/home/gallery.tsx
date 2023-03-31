@@ -5,6 +5,7 @@ import s4 from "../../../public/service4.png"
 import pic1 from "../../../public/home/pic1.png"
 import pic2 from "../../../public/home/pic2.png"
 import Image from "next/image"
+import Link from "next/link"
 export const GalleryH =()=>{
 
     return(
@@ -16,14 +17,18 @@ export const GalleryH =()=>{
                         <p className="text-5xl 2xlm:mt-12 mdm:mt-[4vw] mdm:text-[7vw] mdm:leading-[6vw]">{"บรรยากาศ"}</p>
                         <p className="text-black text-3xl leading-[40px] w-[600px] text-left mt-6 mdm:text-[5vw] mdm:leading-[7vw] mdm:w-auto">{"บ้านพักตั้งอยู่ใจกลางเมือง เดินทางสะดวก บรรยากาศปลอดโปร่งร่มรื่น พร้อมเจ้าหน้าที่ดูแลตลอด 24 ชั่วโมง มีโรงพยาบาลใกล้เคียงถึง 4 แห่ง ในกรณีฉุกเฉินสามารถส่งตัวเข้าโรงพยาบาลได้ทันท่วงที ถูกสุขอนามัย เครื่องปรับอากาศ บริการ wifi พร้อมกล้องวงจรปิดรักษาความปลอดภัย ที่จอดรถ"}</p>
                         <button className="mainbutton ml-[150px] mt-4 2xlm:mt-12 mdm:mt-[4vw] 2xlm:ml-0 2xlm:place-self-center 2xlm:w-[300px] 2xlm:h-[80px] mdm:w-[50vw] mdm:h-[12vw] 2xlm:hidden">
+                        <Link href="/gallery">
                             <p className="mx-[40px] mdm:text-[5vw] mdm:mx-0">{"ดูเพิ่มเติม"}</p>
+                        </Link>
                         </button>   
                     </div>
                     <div className="w-[640px] mdm:w-[100vw] mdm:flex justify-center  2xlm:mt-12 ">
                         <Image src={pic1} alt="" className="mdm:w-[90vw]"/>
                     </div>
                     <button className="mainbutton ml-[150px] mt-4 2xlm:mt-12 mdm:mt-[4vw] 2xlm:ml-0 2xlm:place-self-center 2xlm:w-[300px] 2xlm:h-[80px] mdm:w-[50vw] mdm:h-[12vw] 2xl:hidden">
+                    <Link href="/gallery">
                             <p className="mx-[40px] mdm:text-[5vw] mdm:mx-0">{"ดูเพิ่มเติม"}</p>
+                    </Link>
                     </button> 
                 </div>
                 <div className="w-full flex mt-12 2xlm:flex-col 2xlm:items-center mdm:mt-[8vw]">
@@ -34,14 +39,18 @@ export const GalleryH =()=>{
                         <p className="text-5xl 2xlm:mt-12 mdm:mt-[4vw] mdm:text-[7vw] mdm:leading-[6vw]">{"กิจกรรม"}</p>
                         <p className="text-black text-3xl leading-[40px] w-[600px] text-left mt-6 mdm:text-[5vw] mdm:leading-[7vw] mdm:w-auto">{"ออกกำลังกายอย่างเหมาะสม เพื่อนพูดคุยที่รู้ใจ เดินเล่นสร้างสุข สุขภาพแข็งแรง และกิจกรรมนันทการต่างๆตามเทศกาล และ วันสำคัญทางศาสนา ทำบุญ อิ่มใจ อิ่มบุญ เล่นเกม ปลูกต้นไม้ ทั้งหมดนี้ด้วยบุคลากรเฉพาะทาง มั่นใจได้เลยว่าคนที่ท่านรักและห่วงใยจะได้รับการดูแลที่เหมาะสม"}</p>
                         <button className="mainbutton ml-[150px] mt-4 2xlm:mt-12 mdm:mt-[4vw] 2xlm:ml-0 2xlm:place-self-center 2xlm:w-[300px] 2xlm:h-[80px] mdm:w-[50vw] mdm:h-[12vw] 2xlm:hidden">
+                        <Link href="/gallery">
                             <p className="mx-[40px] mdm:text-[5vw] mdm:mx-0">{"ดูเพิ่มเติม"}</p>
+                        </Link>
                         </button>   
                     </div>
                     <div className="w-[640px] mdm:w-[100vw] mdm:flex justify-center 2xl:hidden 2xlm:mt-12">
                         <Image src={pic2} alt="" className="mdm:w-[90vw] 2xl:hidden"/>
                     </div>
                     <button className="mainbutton ml-[150px] mt-4 2xlm:mt-12 mdm:mt-[4vw] 2xlm:ml-0 2xlm:place-self-center 2xlm:w-[300px] 2xlm:h-[80px] mdm:w-[50vw] mdm:h-[12vw] 2xl:hidden">
+                    <Link href="/gallery">
                             <p className="mx-[40px] mdm:text-[5vw] mdm:mx-0">{"ดูเพิ่มเติม"}</p>
+                    </Link>
                     </button> 
                     
                 </div>
@@ -53,7 +62,9 @@ export const GalleryH =()=>{
                     <div className="w-[1440px] flex items-center justify-between px-[50px] 2xlm:flex-col ">
                         
                         <button className="mainbutton ml-[150px] 2xlm:ml-0 2xlm:mb-[70px] lgm:mb-[40px] smm:mb-[4vw] smm:w-[30vw] smm:text-[3vw] smm:leading-[3vw] smm:h-[10vw] 2xlm:hidden">
+                        <Link href="/contact">
                             <p className="mx-[40px] smm:mx-0">{"ติดต่อเรา"}</p>
+                        </Link>
                         </button>   
                         <div className=" flex flex-col  2xlm:py-[70px] smm:py-[4vw] ">
                             <div className="flex w-full 2xlm:justify-center">
@@ -63,7 +74,9 @@ export const GalleryH =()=>{
                                 <p className="text-white text-[36px] addshadow text-right mt-6 smm:text-[4vw] smm:leading-[4vw] smm:mt-[4vw]">{"สำหรับห้องเดี่ยวที่ นพพรเนิร์สซิ่งโฮม อุปกรณ์ครบครัน"}</p>
                         </div>
                         <button className="mainbutton ml-[150px] 2xlm:ml-0 2xlm:mb-[70px] lgm:mb-[40px] smm:mb-[4vw] smm:w-[30vw] smm:text-[3vw] smm:leading-[3vw] smm:h-[10vw] 2xl:hidden ">
+                        <Link href="/contact">
                             <p className="mx-[40px] smm:mx-0">{"ติดต่อเรา"}</p>
+                        </Link>
                         </button>   
                     </div>
                 </div>
