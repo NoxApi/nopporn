@@ -2,12 +2,32 @@ import Image from "next/image"
 import { useState } from "react"
 import s1 from "../../../public/s1.png"
 import s2 from "../../../public/s2.png"
+import classNames from 'classnames';
 import s3 from "../../../public/s3.png"
 export const Cover =()=>{
     const [cover,setcover] = useState(0)
+    const [isready,setisready] = useState(false)
+    let combinedClasses
+    const auto = () =>{
+    if(cover != 10){
+        setcover(cover+1)
+    } 
+    else
+        setcover(0)
+    }
+    setInterval(auto,5000);
+    useState(()=>{
+        console.log("hey")
+        const dynamicClass = "bg-cover"+cover
+        combinedClasses = classNames('');
+        setisready(true)
+    }),[]
+
     return(
-        <div className="w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw]">
-            <div className="w-[1920px]  h-[896px] xlm:h-[1108px] xlm:bg-cover1 flex mdm:h-[170vw] mdm:w-[100vw] mdm:bg-cover mdm:bg-center">
+        <div className={`w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw]`}>
+            {isready?(<>
+            <div className="hidden bg-cover1 bg-cover2 bg-cover3 bg-cover4 bg-cover5 bg-cover6 bg-cover7 bg-cover8 bg-cover9 bg-cover10 bg-cover0"></div>
+            <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] mdm:bg-cover mdm:bg-center xlm:bgcover xlm:bg-cover"+cover}>
                 <div className="w-[800px] ml-[240px] h-full flex justify-center items-center pl-[50px] xlm:pl-0 xlm:w-full xlm:ml-0 xlm:bg-[#00BBEA] xlm:bg-opacity-30">
                     <div className="w-[550px] h-auto xlm:flex xlm:flex-col xlm:items-center">
                         <p className="text-2xl text-left outlineadd xlm:text-6xl mdm:text-[7vw]">{"อารมณ์ดี สุขภาพดี"}</p>
@@ -78,7 +98,7 @@ export const Cover =()=>{
                                 <div className={`  w-[30px] h-[30px] rounded-full ml-4 ${(cover==10)?("bg-main"):("bg-secondary")}`}></div>
                             </div>
                         </div>
-                        <div className="w-[896px] h-[896px] rounded-full bg-cover1 bg-cover bg-center"></div>
+                        <div className={"w-[896px] h-[896px] rounded-full bg-cover bg-center bg-cover"+cover}></div>
                     </div>
                 </div>
             </div>
@@ -108,7 +128,8 @@ export const Cover =()=>{
                 </div>
             </div>
             <button className="mainbutton absolute bottom-[200px] left-[50%] translate-x-[-50%] xlm:hidden">{"สอบถามเพิ่มเติม"}</button>
-            
+            </>):(null)}
         </div>
     )
 }
+
