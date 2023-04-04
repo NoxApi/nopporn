@@ -16,7 +16,7 @@ export default  function Contactpage(){
     return(
         <div className="w-[1920px] h-auto relative opensans flex flex-col items-center text-main 2xlm:h-auto">
             <div className="w-full bg-head h-[400px] mdm:h-[40vw] bg-cover mdm:bg-contain bg-center flex justify-center items-center">
-                <p className="text-6xl smm:text-[10vw]">{"คลังภาพ"}</p>
+                <p className="text-6xl smm:text-[10vw]">{"เกี่ยวกับเรา"}</p>
             </div>
             <div className="w-[1440px] h-auto bg-white flex flex-col items-center justify-between py-[80px] mdm:py-[10vw] 2xlm:h-auto">
                 <div className="w-full flex mt-24 2xlm:mt-12 2xlm:flex-col 2xlm:items-center mdm:mt-[8vw]  ">
@@ -44,7 +44,7 @@ export default  function Contactpage(){
                 
                 
             </div>
-            <div className="w-full bg-div3 bg-cover h-auto flex justify-center  items-center 2xlm:h-auto smm:w-[100vw] bg-[center_top_600px] smm:bg-[center_top_0vw] mt-12 smm:h-[45vw] lgm:mt-8 smm:mt-[10vw]"> 
+            <div className="w-full bg-div4 bg-cover h-auto flex justify-center  items-center 2xlm:h-auto smm:w-[100vw] bg-[center_top_600px] smm:bg-[center_top_0vw] mt-12 smm:h-[45vw] lgm:mt-8 smm:mt-[10vw]"> 
                 
                 <div className="bg-black h-full w-[1920px] px-[50px] smm:px-[5vw] bg-opacity-40 flex justify-center  items-center">
                     <div className="w-[1440px] flex items-center px-[30px] 2xlm:flex-col">

@@ -17,6 +17,7 @@ module.exports = {
         'div1': "url('/div1.jpg')",
         'div2': "url('/div2.jpg')",
         'div3': "url('/div3.jpg')",
+        'div4': "url('/div4.jpg')",
         'cover1': "url('/c1.jpg')",
         'cover2': "url('/cover2.jpg')",
         'cover3': "url('/cover3.jpg')",

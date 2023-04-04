@@ -23,7 +23,15 @@ export const Cover =()=>{
 
     return(
         <div className={`w-[1920px] h-[1024px] relative opensans text-[#0C294B] flex flex-col items-center overflow-hidden xlm:h-auto  mdm:w-[100vw] `}>
-            <div className="hidden bg-cover1 bg-cover2 bg-cover3 bg-cover4 bg-cover5 bg-cover6 bg-cover7 bg-cover8 bg-cover9 bg-cover10 bg-cover0"></div>
+            <div className="absolute left-0 top-0 bg-cover1 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover2 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover3 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover4 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover5 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover6 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover7 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover8 -z-40 "></div>
+            <div className="absolute left-0 top-0 bg-cover9 -z-40 "></div>
             <div className={"w-[1920px]  h-[896px] xlm:h-[1108px] flex mdm:h-[170vw] mdm:w-[100vw] xlm:bg-cover xlm:bg-center  xl:bg-none  bg-cover"+cover}>
                 <div className="w-[800px] ml-[240px] h-full flex justify-center items-center pl-[50px] xlm:pl-0 xlm:w-full xlm:ml-0 xlm:bg-[#00BBEA] xlm:bg-opacity-30">
                     <div className="w-[550px] h-auto xlm:flex xlm:flex-col xlm:items-center">
