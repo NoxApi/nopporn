@@ -14,7 +14,7 @@ export default  function Contactpage(){
     return(
         <div className="w-[1920px] h-auto relative opensans flex flex-col items-center text-main 2xlm:h-auto">
             <div className="w-full bg-head h-[400px] mdm:h-[40vw] bg-cover mdm:bg-contain bg-center flex justify-center items-center">
-                <p className="text-6xl smm:text-[10vw]">{"คลังภาพ"}</p>
+                <p className="text-6xl smm:text-[10vw]">{"เกี่ยวกับเรา"}</p>
             </div>
             <div className="w-full h-auto  flex flex-col  items-center justify-center lgm:mt-8 smm:mt-[5vw]">
                 <div className="w-[1440px] flex justify-center  2xlm:w-[100vw] flex-col items-center  py-[80px] smm:py-[5vw] ">
