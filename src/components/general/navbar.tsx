@@ -22,7 +22,7 @@ export const Navbar =()=>{
                             <p className="text-xl link ">{"หน้าแรก"}</p>
                         </button>
                     </Link>
-                    <Link href={"#service"}>
+                    <Link href={"/service"}>
                         <button className="ml-8">
                             <p className="text-xl link">{"บริการ"}</p>
                         </button>
@@ -32,7 +32,7 @@ export const Navbar =()=>{
                             <p className="text-xl link">{"คลังภาพ"}</p>
                         </button>
                     </Link>
-                    <Link href={"#aboutus"}>
+                    <Link href={"/aboutus"}>
                         <button className="ml-8">
                             <p className="text-xl link">{"เกี่ยวกับเรา"}</p>
                         </button>
@@ -98,7 +98,7 @@ function HeaderMobile() {
                         </Link>
                   </button>
                   <button onClick={closeModal} className="w-[100%] flex">
-                        <Link href={"#service"}>      
+                        <Link href={"/service"}>      
                             <p className="my-[5vw] text-xl text-main">{"บริการ"}</p> 
                         </Link>
                   </button>
@@ -108,12 +108,12 @@ function HeaderMobile() {
                         </Link>
                   </button>
                   <button onClick={closeModal} className="w-[100%] flex">
-                        <Link href={"#aboutus"}>      
+                        <Link href={"/aboutus"}>      
                             <p className="my-[5vw] text-xl text-main">{"เกี่ยวกับเรา"}</p> 
                         </Link>
                   </button>
                   <button onClick={closeModal} className="w-[100%] flex">
-                        <Link href={"#contact"}>      
+                        <Link href={"/contact"}>      
                             <p className="my-[5vw] text-xl text-main">{"ติดต่อเรา"}</p> 
                         </Link>
                   </button>

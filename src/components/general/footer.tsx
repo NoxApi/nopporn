@@ -25,7 +25,7 @@ export const Footer =()=>{
                            
                            
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"#service"}>
+                                    <Link href={"/service"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"บริการ"}</p>
                                     </Link>
                                 </button>
@@ -39,7 +39,7 @@ export const Footer =()=>{
                             
                            
                                 <button className="mt-8 smm:mt-[4vw]">
-                                    <Link href={"#aboutus"}>
+                                    <Link href={"/aboutus"}>
                                         <p className="text-xl smm:text-[3.3vw] link smm:leading-[3vw]">{"เกี่ยวกับเรา"}</p>
                                     </Link>
                                 </button>
