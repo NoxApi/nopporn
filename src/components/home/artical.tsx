@@ -21,7 +21,7 @@ export const ArticleH =()=>{
                                 <p className="text-black mt-2 smm:mt-[3vw] smm:text-[3vw] smm:leading-[4vw]">{"ท่านใด ที่มีผู้ป่วยติดเตียงอยู่ที่บ้าน คงมีความกังวลใจว่า จะดูแลผู้ป่วยติดเตียงอย่างไร ให้ถูกวิธี เนื่องจากผู้ป่วย ไม่สามารถขยับร่างกายใช้ชีวิตประจำวันเองได้ จำเป็นจะต้องมีคนดูแลตลอดเวลา ดังนั้นควรศึกษาวิธีการ และ ทำความเข้าใจถูกต้อง เพื่อฟื้นฟูร่างกายของผู้ป่วย อย่างมีประสิทธิภาพ"}</p>
                             </div>
                             <div className="place-self-end justify-self-end mt-4 smm:mt-0 smm:mb-[2vw]">
-                                <Link href={"/"}>
+                                <Link href={"https://www.facebook.com/baannopporn/photos/a.273539463544029/929814001249902/?type=3&mibextid=cr9u03"}>
                                     <button className=" ">
                                         <p className="text-xl text-right smm:text-[4vw] smm:leading-[4vw]">{"คลิกเพื่ออ่านเพิ่มเติม"}</p>
                                     </button>
@@ -37,7 +37,7 @@ export const ArticleH =()=>{
                                 <p className="text-black mt-2 smm:mt-[3vw]  smm:text-[3vw] smm:leading-[4vw]">{"ภาวะแทรกซ้อน ของโรคเบาหวานนั้นแบ่งออกได้เป็น 2 กลุ่ม คือ แทรกซ้อนชนิดเฉียบพลัน และ ภาวะแทรกซ้อนชนิดเรื้อรัง"}</p>
                             </div>
                             <div className="place-self-end justify-self-end mt-4 smm:mt-0 smm:mb-[2vw]">
-                                <Link href={"/"}>
+                                <Link href={"https://www.facebook.com/baannopporn/photos/a.272928800271762/1036211100610191/"}>
                                     <button className=" ">
                                         <p className="text-xl text-right smm:text-[4vw] smm:leading-[4vw]">{"คลิกเพื่ออ่านเพิ่มเติม"}</p>
                                     </button>
@@ -53,7 +53,7 @@ export const ArticleH =()=>{
                                 <p className="text-black mt-2 smm:mt-[3vw] smm:text-[3vw] smm:leading-[4vw]">{"กิจกรรทางกาย หมายถึง การเคลื่อนไหวร่างกายใด ๆ ที่มีการใช้กล้ามเนื้อ แบ่งเป็น 3 ระดับตามการเคลื่อนไหว 1) กิจกรรมทางกายระดับเบา 2) กิจกรรมทางกายระดับปานกลาง 3) กิจกรรมทางกายระดับหนัก"}</p>
                             </div>
                             <div className="place-self-end justify-self-end mt-4 smm:mt-0 smm:mb-[2vw]">
-                                <Link href={"/"}>
+                                <Link href={"https://www.facebook.com/baannopporn/photos/a.272928800271762/1040910643473570"}>
                                     <button className=" ">
                                         <p className="text-xl text-right smm:text-[4vw] smm:leading-[4vw]">{"คลิกเพื่ออ่านเพิ่มเติม"}</p>
                                     </button>
