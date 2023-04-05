@@ -44,7 +44,8 @@ export const Cover =()=>{
                         </div>
                         <p className="text-4xl text-left mt-8 mdm:mt-[4vw] outlineadd xlm:text-6xl mdm:text-[8vw]">{"ให้เราช่วยดูแล "}</p>
                         <p className="text-4xl text-left mt-8 mdm:mt-[4vw] outlineadd xlm:text-6xl mdm:text-[8vw]">{"คนที่ท่านรัก"}</p>
-                        <button className="mainbutton xl:hidden mt-52 mdm:mt-[80vw] smm:w-[40vw] smm:text-[4vw] smm:leading-[3vw] smm:h-[14vw] ">{"สอบถามเพิ่มเติม"}</button>
+                        <button className="mainbutton xl:hidden mt-52 mdm:mt-[80vw] smm:w-[40vw] smm:text-[4vw] smm:leading-[3vw] smm:h-[14vw] "><Link href={"/contact"}>{"สอบถามเพิ่มเติม"}
+                </Link></button>
                         <div className="flex xl:hidden mt-[3vw]">
                             <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200  ${(cover==0)?("bg-main"):("bg-secondary")} `}></div>
                             <div className={`w-[2vw] h-[2vw] rounded-full transition-all duration-200 ml-[1vw] ${(cover==1)?("bg-main"):("bg-secondary")} `}></div>

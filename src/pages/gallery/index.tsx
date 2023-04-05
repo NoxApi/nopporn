@@ -61,27 +61,27 @@ export default  function Contactpage(){
 
                 </div>
                 <div className="w-[1440px] flex justify-center  2xlm:w-[100vw] flex-col items-center  py-[80px] smm:py-[5vw] mt-12 mdm:mt-[5vw] ">
-                    <p className="text-5xl smm:text-[5vw] xl:self-start xl:ml-[70px]">{"สถานที่และห้องพัก"}</p>
+                    <p className="text-5xl smm:text-[5vw] xl:self-start xl:ml-[70px]">{"บรรยากาศและกิจกรรม"}</p>
                     <div className={`flex justify-center gap-4 mdm:gap-[4vw] mt-8 mdm:mt-[4vw] mdm:flex-col h-auto mdm:justify-start overflow-hidden `}>
                         <div className={`flex flex-col gap-4 mdm:gap-[4vw]  mdm:mt-[4vw] mdm:px-[10vw]   `}>
                             <Image src={a10} alt='' className="w-[420px] rounded-xl" />
                             <Image src={a11} alt='' className="w-[420px] rounded-xl" /> 
                             <Image src={a12} alt='' className="w-[420px] rounded-xl" />  
                         </div>
-                        <div className={`flex flex-col gap-4 mdm:gap-[4vw]  mdm:px-[10vw] ${isshow1?("  "):(" mdm:hidden ")}`}>
+                        <div className={`flex flex-col gap-4 mdm:gap-[4vw]  mdm:px-[10vw] ${isshow2?("  "):(" mdm:hidden ")}`}>
                             <Image src={a13} alt='' className="w-[420px] rounded-xl" />
                             <Image src={a14} alt='' className="w-[420px] rounded-xl" /> 
                             <Image src={a15} alt='' className="w-[420px] rounded-xl" />  
                         </div>
-                        <div className={`flex flex-col gap-4 mdm:gap-[4vw] mdm:px-[10vw] ${isshow1?("  "):(" mdm:hidden ")}`}>
+                        <div className={`flex flex-col gap-4 mdm:gap-[4vw] mdm:px-[10vw] ${isshow2?("  "):(" mdm:hidden ")}`}>
                             <Image src={a16} alt='' className="w-[420px] rounded-xl" />
                             <Image src={a17} alt='' className="w-[420px] rounded-xl" /> 
                             <Image src={a18} alt='' className="w-[420px] rounded-xl" />  
                         </div>
                     </div>
-                    <div onClick={()=>setisshow1(!isshow1)} className="flex md:hidden mdm:mt-4 smm:mt-[2vw]">
+                    <div onClick={()=>setisshow2(!isshow2)} className="flex md:hidden mdm:mt-4 smm:mt-[2vw]">
                         <p  className={` cursor-pointer text-3xl smm:text-[4vw]  `}>{"เพิ่มเติม"}</p>
-                        <Image src={v1} alt="" className={` ml-[1vw] ${isshow1?(" rotate-180 "):(" ")} `} />
+                        <Image src={v1} alt="" className={` ml-[1vw] ${isshow2?(" rotate-180 "):(" ")} `} />
                     </div>
                     
 
