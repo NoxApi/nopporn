@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <link href='https://fonts.googleapis.com/css?family=Noto Sans Thai' rel='stylesheet'/>
       <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-T59LHBSCPN"
+                src="https://www.googletagmanager.com/gtag/js?id=G-HEVZ5S15LM"
                 strategy="afterInteractive"
               />
               <Script id="google-analytics" strategy="afterInteractive">
